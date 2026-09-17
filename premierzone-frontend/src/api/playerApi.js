@@ -3,7 +3,7 @@ import axios from "axios";
 // Base URL points at the Spring Boot PlayerController:
 // @RequestMapping(path = "api/lah/player")
 // Change this in .env (REACT_APP_API_URL) if your backend runs elsewhere.
-const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8080/api/lah/player";
+const RAW_BASE_URL = "https://premier-zonefoot-2.onrender.com/api/lah/player";
 
 const client = axios.create({
   baseURL: BASE_URL,
